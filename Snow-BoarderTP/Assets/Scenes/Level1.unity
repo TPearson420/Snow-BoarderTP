@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bd4aae07e7e181489310eb9ad83d75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finishEffect: {fileID: 1109456498}
   loadDelay: 1
 --- !u!61 &12710189
 BoxCollider2D:
@@ -606,7 +607,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -654,7 +655,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -5566,7 +5567,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -5622,7 +5623,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
@@ -10994,6 +10995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d69e7f4e879f406419a1ec705df246fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crashEffect: {fileID: 1449687461}
   loadDelay: 0.5
 --- !u!1 &2095415042
 GameObject:
