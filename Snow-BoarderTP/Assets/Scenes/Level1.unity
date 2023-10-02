@@ -229,7 +229,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9d1d53355c82ad64dbd84fe2fc8202f1, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -17203,7 +17203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crashEffect: {fileID: 1449687461}
   loadDelay: 1
-  crashSFX: {fileID: 0}
+  crashSFX: {fileID: 8300000, guid: 189481de7d3102a49b53cbeac953bec7, type: 3}
 --- !u!114 &2085773998
 MonoBehaviour:
   m_ObjectHideFlags: 0
