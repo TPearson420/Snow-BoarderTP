@@ -8,10 +8,12 @@ public class CrashDetector : MonoBehaviour
     [SerializeField] ParticleSystem crashEffect;
     [SerializeField] float loadDelay = 0.5f;
     [SerializeField] AudioClip crashSFX;
+    bool hasCrashed = false;
         void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Ground")
+        if (other.tag == "Ground" && !hasCrashed)
         {
+            hasCrashed = true;
             FindObjectOfType<Barry>().DisableControls();
             crashEffect.Play();
             GetComponent<AudioSource>().PlayOneShot(crashSFX);
