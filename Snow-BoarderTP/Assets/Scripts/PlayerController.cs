@@ -9,6 +9,7 @@ public class Barry : MonoBehaviour
     [SerializeField] float baseSpeed = 20f;
     Rigidbody2D rb2d;
     SurfaceEffector2D surfaceEffector2D;
+    bool canMove = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +20,19 @@ public class Barry : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RotatePlayer();
-        RespondtoBoost();
+        if (canMove)
+        {
+            RotatePlayer();
+            RespondtoBoost();
+        }
     }
+    public void DisableControls()
+    {
+        canMove = false;
+    }
+    
+        
+    
     void RespondtoBoost() {
         if (Input.GetKey(KeyCode.UpArrow))
         {
